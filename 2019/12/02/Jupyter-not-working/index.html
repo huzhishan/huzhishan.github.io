@@ -202,16 +202,15 @@
     </div>
     <html><head></head><body><p>近日在mac中重装Anaconda，发现无法打开jupyter，总是报错。<br>最终发现是因为语言的问题。<br>在最近一版的Jupyter notebook中，菜单语言全都被改成了中文，这导致在系统打开jupyter的时候因为没有相应的中文支持而失败。</p>
 <p>解决方案：</p>
-<p>test_hu</p>
+<p>test_hu1</p>
 <p>先打开  .bash_profile</p>
-<pre><code class="python">open ~/.bash_profile</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">open</span> ~/.bash_profile</span><br></pre></td></tr></tbody></table></figure>
 <p>然后将以下内容添加到文件中</p>
-<pre><code class="python">export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export LC_ALL=en_US.UTF<span class="number">-8</span></span><br><span class="line">export LANG=en_US.UTF<span class="number">-8</span></span><br></pre></td></tr></tbody></table></figure>
 <p>然后重新载入</p>
-<pre><code class="python">source ~/.bash_profile</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></tbody></table></figure>
 <p>重新运行jupyter notebook</p>
-<pre><code class="python">jupyter notebook</code></pre>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></tbody></table></figure>
 <p>Done! Enjoy!</p>
 </body></html>
 
