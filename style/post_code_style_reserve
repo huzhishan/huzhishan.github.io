@@ -1,9 +1,0 @@
-  code:not(.hljs) {
-    color: #1565c0
-    margin: 0 0.2rem
-    background: #e3f2fd
-​    padding: 0.2rem
-​    border-radius: 0.3rem
-​    border: 1px solid #eee
-  }
-
