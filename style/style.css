@@ -440,15 +440,6 @@ a {
   font-size: 0.75rem;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
-.post-entry code:not(.hljs),
-.post-wrap code:not(.hljs) {
-  color: #1565c0;
-  margin: 0 0.2rem;
-  background: #e3f2fd;
-  padding: 0.2rem;
-  border-radius: 0.3rem;
-  border: 1px solid #eee;
-}
 .post-entry p,
 .post-wrap p,
 .post-entry table,
