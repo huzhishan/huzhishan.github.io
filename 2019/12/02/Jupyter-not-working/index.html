@@ -201,17 +201,23 @@
       <div>
       </div>
     </div>
-    <html><head></head><body><p>近日在mac中重装Anaconda，发现无法打开jupyter，总是报错。<br>最终发现是因为语言的问题。<br>在最近一版的Jupyter notebook中，菜单语言全都被改成了中文，这导致在系统打开jupyter的时候因为没有相应的中文支持而失败。</p>
-<p>解决方案: </p>
+    <html><head></head><body><p>近日在mac中重装Anaconda，发现无法打开jupyter，总是报错。<br>
+最终发现是因为语言的问题。<br>
+在最近一版的Jupyter notebook中，菜单语言全都被改成了中文，这导致在系统打开jupyter的时候因为没有相应的中文支持而失败。</p>
+<p>解决方案:</p>
 <p>先打开  .bash_profile</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">open</span> ~/.bash_profile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-language-bash"><code class="language-language-bash">open ~/.bash_profile
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>然后将以下内容添加到文件中</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">export</span> LC_ALL<span class="token operator">=</span>en_US.UTF-8
-<span class="token function">export</span> LANG<span class="token operator">=</span>en_US.UTF-8<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-language-bash"><code class="language-language-bash">export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>然后重新载入</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">source</span> ~/.bash_profile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-language-bash"><code class="language-language-bash">source ~/.bash_profile
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>重新运行jupyter notebook</p>
-<pre class="line-numbers language-python"><code class="language-python">jupyter notebook<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-language-python"><code class="language-language-python">jupyter notebook
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>Done! Enjoy!</p>
 </body></html>
 
